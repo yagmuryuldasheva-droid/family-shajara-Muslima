@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muslima's Family Tree</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 18px;
+    font-family: Georgia, serif;
+    background: #f2f3e9;
+    color: #35483b;
+}
+
+header {
+    text-align: center;
+    padding: 45px 15px;
+    background: #e2e8d9;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: auto auto 35px;
+    border: 1px solid #c6d0b9;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin: 0 0 12px;
+}
+
+header p {
+    color: #71816a;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #526a52;
+    margin: 25px 0;
+}
+
+h3 {
+    font-weight: normal;
+    color: #61765e;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.branches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.branch {
+    background: #fffef8;
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid #d6ddc9;
+    box-shadow: 0 4px 15px rgba(65,80,60,.06);
+}
+
+.maternal {
+    border-top: 5px solid #a6b89a;
+}
+
+.paternal {
+    border-top: 5px solid #c4aa76;
+}
+
+.grandparents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    background: #edf1e6;
+    border: 1px solid #d4ddca;
+    padding: 13px 9px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.paternal .card {
+    background: #f5f0e2;
+    border-color: #e4d9b9;
+}
+
+.label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #84927a;
+    margin-bottom: 6px;
+}
+
+.member {
+    padding: 13px;
+    margin: 12px 0;
+    border-left: 3px solid #a6b89a;
+    background: #f6f8f1;
+    border-radius: 7px;
+}
+
+.paternal .member {
+    border-left-color: #c4aa76;
+    background: #faf7ed;
+}
+
+.member strong {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.date {
+    display: block;
+    font-size: 12px;
+    color: #8b927e;
+    margin-top: 5px;
+}
+
+.children {
+    border-top: 1px solid #dce3d4;
+    margin-top: 9px;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #66745f;
+}
+
+.connection {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fffef8;
+    border: 1px solid #d4ddc9;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.couple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.heart {
+    color: #b68c73;
+    font-size: 23px;
+}
+
+.own-family {
+    max-width: 850px;
+    margin: 40px auto;
+    background: #e5ebdd;
+    border: 1px solid #c7d2bc;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+}
+
+.children-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.child {
+    background: #fffef8;
+    border: 1px solid #d0dac7;
+    border-radius: 10px;
+    padding: 12px 5px;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 10px;
+    color: #85927b;
+    font-style: italic;
+}
+
+@media(max-width: 800px) {
+    .branches {
+        grid-template-columns: 1fr;
+    }
+
+    .children-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Muslima's Family Tree</h1>
+    <p>A Journey Through Three Generations</p>
+    <p>Roots of Love · Branches of Family · Stories of Life</p>
+</header>
+
+<main class="container">
+
+<div class="branches">
+
+<!-- MATERNAL SIDE -->
+
+<section class="branch maternal">
+
+<h2>Maternal Family</h2>
+
+<div class="grandparents">
+
+<div class="card">
+<span class="label">Great Grandfather</span>
+Shohasan Davlatov
+<span class="date">1930–2004</span>
+</div>
+
+<div class="card">
+<span class="label">Great Grandmother</span>
+Davlatova Zahro
+<span class="date">1934–2001</span>
+</div>
+
+</div>
+
+<h3>Their Children</h3>
+
+<div class="member">
+<strong>Баходир Давлатов</strong>
+<span class="date">Born 1955</span>
+</div>
+
+<div class="member">
+<strong>Гулчехра Давлатова</strong>
+<span class="date">11 October 1957</span>
+</div>
+
+<div class="member">
+<strong>Бахтиёр Далатов</strong>
+<span class="date">1958–2020</span>
+</div>
+
+<div class="member">
+<strong>Равшан Давлатов</strong>
+<span class="date">1963–2020</span>
+</div>
+
+<div class="member">
+<strong>Зухра Давлатова</strong>
+<span class="date">Born 1967</span>
+</div>
+
+<div class="member">
+<strong>Davron</strong>
+<span class="date">27 April 1965</span>
+<div class="children">
+Married to Muhtabar (9 July 1968)
+</div>
+</div>
+
+<h3>Davron and Muhtabar's Children</h3>
+
+<div class="member">
+<strong>Durdona</strong>
+<span class="date">20 March 1988</span>
+<div class="children">
+Husband: Rovshan (26 March 1981)<br>
+Children: Anvarjon (4 November 2006),<br>
+Abdulloh (28 June 2008),<br>
+Muhammadbilol (20 August 2013),<br>
+Khadija (31 December 2020)
+</div>
+</div>
+
+<div class="member">
+<strong>Dildora (Muslima's Mother)</strong>
+<span class="date">8 February 1990</span>
+<div class="children">
+Husband: Jasur (31 August 1983)
+</div>
+</div>
+
+<div class="member">
+<strong>Javlon</strong>
+<span class="date">12 July 1992</span>
+<div class="children">
+Wife: Dilobar (28 September 1997)<br>
+Children: Umar (16 December 2017),<br>
+Abdurahmon (20 March 2020),<br>
+Muhammadamin (29 March 2022),<br>
+Safiya (31 July 2026)
+</div>
+</div>
+
+<div class="member">
+<strong>Munisa</strong>
+<span class="date">31 December 1999</span>
+<div class="children">
+Husband: Alisher (29 April 1993)<br>
+Children: Madina (19 August 2017),<br>
+Rayyona (19 July 2022),<br>
+Muhammadali (1 April 2026)
+</div>
+</div>
+
+</section>
+
+<!-- PATERNAL SIDE -->
+
+<section class="branch paternal">
+
+<h2>Paternal Family</h2>
+
+<div class="grandparents">
+
+<div class="card">
+<span class="label">Great Grandfather</span>
+Mirsoat Miraliyev
+<span class="date">1927–2000</span>
+</div>
+
+<div class="card">
+<span class="label">Great Grandmother</span>
+Khojieva Zuhra
+<span class="date">1933–1995</span>
+</div>
+
+</div>
+
+<div class="member">
+<strong>Mirpolat</strong>
+<span class="date">Born 7 November · 68 years old</span>
+<div class="children">
+Wife: Dilfuza (19 February · 63 years old)
+</div>
+</div>
+
+<h3>Their Children</h3>
+
+<div class="member">
+<strong>Rustam</strong>
+<span class="date">9 January 1981</span>
+<div class="children">
+Wife: Fotima (28 February 1987)<br><br>
+Durdona (4 August 2005)<br>
+Husband: Khusanboy (8 February 2001)<br>
+Child: Muhammadali (16 July 2025)<br><br>
+Rukhsora (9 January 2008)<br>
+Husband: Bahodir<br>
+Child: Khalid (3 October 2026)<br><br>
+E'zoza (16 April 2010)<br>
+Muhammadamin (14 January 2012)<br>
+Osiyo (23 November 2016)
+</div>
+</div>
+
+<div class="member">
+<strong>Umida</strong>
+<span class="date">5 May 1982</span>
+<div class="children">
+Husband: Dilmurod (5 January 1981)<br><br>
+Children:<br>
+Elmurod (20 May 2001)<br>
+Wife: Iroda (26 March 2006)<br>
+Aziza (20 December 2005)<br>
+Husband: Nizomiddin (20 November 1997)<br>
+Children: Muhammad (4 June 2023), Soliha (30 July 2025)<br>
+MuhammadSolih (3 January 2010)
+</div>
+</div>
+
+<div class="member">
+<strong>Jasur (Muslima's Father)</strong>
+<span class="date">31 August 1983</span>
+<div class="children">
+Wife: Dildora (8 February 1990)<br>
+Their children are shown in the family section below.
+</div>
+</div>
+
+<div class="member">
+<strong>Dilobar</strong>
+<span class="date">Born 1985</span>
+<div class="children">
+Husband: Bahodir (16 August 1980)<br><br>
+Mubina (28 June 2007)<br>
+Husband: Ahmad (28 June 1999)<br>
+Iymona (20 July 2011)<br>
+Soliha (8 August 2013)
+</div>
+</div>
+
+<div class="member">
+<strong>Dilorom</strong>
+<span class="date">11 October 1987</span>
+<div class="children">
+Husband: Akmal (12 April 1983)<br>
+Children:<br>
+Abdulloh (27 June 2008)<br>
+Abdurahmon (8 October 2011)<br>
+Sora (28 August 2016)
+</div>
+</div>
+
+</section>
+
+</div>
+
+<!-- FAMILY CONNECTION -->
+
+<section class="own-family">
+
+<h2>Jasur & Dildora's Family</h2>
+
+<div class="couple">
+
+<div class="card">
+<span class="label">Father</span>
+Jasur
+<span class="date">31 August 1983</span>
+</div>
+
+<span class="heart">♥</span>
+
+<div class="card">
+<span class="label">Mother</span>
+Dildora
+<span class="date">8 February 1990</span>
+</div>
+
+</div>
+
+<h3>Their Children</h3>
+
+<div class="children-grid">
+
+<div class="child">
+<strong>Muslima</strong>
+<span class="date">1 December 2008</span>
+</div>
+
+<div class="child">
+<strong>Muhammad Yusuf</strong>
+<span class="date">21 December 2010</span>
+</div>
+
+<div class="child">
+<strong>Firdavs</strong>
+<span class="date">24 September 2013</span>
+</div>
+
+<div class="child">
+<strong>Jasmin</strong>
+<span class="date">17 July 2018</span>
+</div>
+
+<div class="child">
+<strong>Aisha</strong>
+<span class="date">7 March 2025</span>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+Every family has a story. This is ours.
+<br><br>
+Made with love ♡
+</footer>
+
+</body>
+</html>
